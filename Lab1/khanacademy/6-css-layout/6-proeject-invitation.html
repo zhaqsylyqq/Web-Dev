@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Event invite</title>
+        <style>
+            body {
+                font-family: 'Helvetica', sans-serif;
+                background-color: rgb(55,59,62);
+                color: rgb(190,200,209);
+            }
+            #title {
+                text-align: center;
+                font-size: 4em;
+            }
+            #main-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 95vh;
+            }
+            .event-date {
+                color: rgb(19,122,127);
+                float: right;
+            }
+            #event-name {
+                color: rgb(134,206,203);
+                font-style: italic;
+                font-weight: bold;
+            }
+            #event-container {
+                font-size: 1.5em;
+                display: flex;
+                flex-direction: row;
+                gap: 4em;
+            }
+            p {
+                margin-bottom: 0.5em;
+            }
+            #programm {
+                color: 	rgb(225,40,133);
+                font-size: 1.5em;
+            }
+            li {
+                font-size: 1.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main-container">
+            <h1 id="title">You're invited!</h1>
+            <div id="event-container">
+                <h1 class="event-date">22nd <br>of January</h1>
+                <hr>
+                <h2>To <span id="event-name">Hatsune Miku's Concert!</span></h2>
+            </div>
+
+            
+            <h2>The details:</h2>
+            <p><strong>Hatsune Miku</strong> will perform her most popular song at the N Arena in M city <em>for the first time.</em></p>
+            <p>Be sure not to miss it, as the programm contains both the all time classics and new trendy songs from her catalog</p>
+            
+            <h3 id="programm">The programm</h3>
+            <ol>
+                <li>'Melt' by ryo</li>
+                <li>'Miku' by Anamanaguchi</li>
+                <li>'Donut Hole' by hachi</li>
+                <li>'Intergalactic Bound' by Yunosuke</li>
+                <li>'Mesmerizer' by Satsuki</li>
+                <li>'Unknown Mother Goose' by wowaka</li>
+            </ol>
+        </div>
+    </body>
+</html>
