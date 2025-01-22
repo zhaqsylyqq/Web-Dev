@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table.deco tr:nth-child(even) {
+        background-color: rgba(150, 212, 212, 0.4);
+        }
+
+        table.deco tr:nth-child(even), table.deco td:nth-child(even) {
+        background-color: rgba(150, 212, 212, 0.4);
+        }
+        tr.cool {
+            border-bottom: 1px solid #ddd;
+        }
+        tr.cool:hover {
+            background-color: #D6EEEE;
+        }
+    </style>
+</head>
+<body>
+    <table class="deco">
+        <tr>
+            <th>Firstname</th>
+            <td>Jill</td>
+            <td>Eve</td>
+          </tr>
+          <tr>
+            <th>Lastname</th>
+            <td>Smith</td>
+            <td>Jackson</td>
+          </tr>
+          <tr>
+            <th>Age</th>
+            <td>94</td>
+            <td>50</td>
+          </tr>
+    </table>
+
+    <table>
+        <tr class="cool">
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Savings</td>
+        </tr>
+        <tr class="cool">
+            <td>Peter </td>
+            <td>Griffin</td>
+            <td>100</td>
+        </tr>
+        <tr class="cool">
+            <td>Lois </td>
+            <td>Griffin</td>
+            <td>150</td>
+        </tr>
+        <tr class="cool">
+            <td>Joe </td>
+            <td>Swanson</td>
+            <td>300</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
