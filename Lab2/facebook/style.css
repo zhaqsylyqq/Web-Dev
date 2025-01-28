@@ -3,6 +3,7 @@
     padding: 0;
     font-family: Helvetica, Arial, sans-serif;
 }
+/*Main part*/
 
 main {
     height: 85vh;
@@ -11,10 +12,12 @@ main {
     padding-bottom: 112px;
 }
 
+/*One more contatiner*/
 .fb-container {
     padding: 20px 0;
 }
 
+/*Logo, login container*/
 #fb-main-container {
     width: 980px;
     margin: 0 auto;
@@ -26,7 +29,7 @@ main {
     grid-auto-rows: auto;
 }
 
-
+/*Logo and short description under it*/
 .fb-logo-container {
     width: 580px;
     margin-top: 112px;
@@ -52,7 +55,7 @@ main {
 }
 
 
-
+/*Login section*/
 .fb-login-container {
     margin-top: 40px;
     height: 456px;
@@ -65,43 +68,171 @@ main {
     height: 320px;
     background-color: white;
     border-radius: 12px;
-    box-shadow: 0 0 48px -20px #373b3ec8;
+    box-shadow: 0 0 32px -16px #373b3ea9;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
 }
 
-
-#fb-username {
+/*Text inputs - email and password*/
+.fb-input {
     display: block;
-    border-radius: 4px;
-    border-color: #373b3ec8;
+    padding: 14px 16px;
+    margin: 6px 6px;
+    font-size: 17px;
+    color: #1c1e21;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
 }
 
-#fb-password {
-    display: block;
-    border-radius: 4px;
+input.fb-input:focus {
+    border-color: #1877f2;
+}
+
+.fb-input::placeholder {
+    color: #65676bac;
+}
+
+/*Submit button*/
+.fb-login-submit {
+    margin-top: 12px;
+    background-color: #0866ff;
+    padding: 12px 16px;
+    border: 1px solid transparent;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.fb-login-submit:hover {
+    background-color: #1877f2;
+    border-color: #365899;
+    transition: 100ms ease-in;
 }
 
 
+/*Forgot password option*/
+.fb-forgot-password {
+    padding: 8px 16px;
+    margin: 6px 6px;
+    text-align: center;
+}
 
+.fb-forgot-password a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0866ff;
+    text-decoration: none;
+}
+
+.fb-forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/*Just a line*/
+.fb-hr-line {
+    margin-top: 6px;
+    align-items: center;
+    padding: 0 6px;
+}
+
+.fb-hr-line hr {
+    border: 1px solid #dddfe2;
+}
+
+/*Create account option*/
 .fb-create-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+}
+
+.fb-create-account-btn {
+    display: inline-block;
+    padding: 16px 20px;
+    margin: 16px 0;
+    background-color: #42b72a;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.fb-create-account-btn:hover {
+    background-color: #36a420;
+    border-color: #36a420;
+}
+
+
+/*Create page option*/
+.fb-create-page {
     font-size: 14px;
     padding: 28px 0;
     text-align: center;
 }
 
-.fb-create-account  a {
+.fb-create-page  a {
     color: #000000;
     text-decoration: none;
     font-weight: 600;
 }
 
-.fb-create-account a:hover {
+.fb-create-page a:hover {
     color: #373b3e;
     text-decoration: underline;
 }
 
 
-
+/*Footer*/
 footer {
     height: 10rem;
+    color: #737373;
+    font-size: 12px;
 }
 
+footer a {
+    color: #737373;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#fb-footer-container {
+    margin: auto;
+    height: inherit;
+    width: 980px;
+    padding-top: 20px;
+}
+
+/*Links lists - default used for languages*/
+footer ul {
+    /* align-items: center; */
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-top: 8px;
+    gap: 10px;
+}
+
+.fb-footer-links {
+    margin-top: 8px;
+}
+
+.fb-footer-links ul {
+    gap: 20px;
+    line-height: 1.6px;
+}
+
+footer .fb-hr-line {
+    padding: 0 0;
+}
+
+footer #copyright {
+    padding-top: 24px;
+    height: auto;
+    font-size: 11px;
+}
