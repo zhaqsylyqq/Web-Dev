@@ -1,3 +1,24 @@
+.ms-logo {
+    height: 25px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    font-size: 13px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+button {
+    border-radius: 0;
+}
+
 .feature-links {
     display: flex;
     flex-wrap: wrap;
@@ -12,3 +33,4 @@
     align-items: center;
     max-width: 150px;
 }
+
