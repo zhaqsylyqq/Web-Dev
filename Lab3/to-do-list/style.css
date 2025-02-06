@@ -1,0 +1,171 @@
+:root {
+    --primary : #86cecb;
+    --secondary : 	#137a7f;
+    --light: #f0f8ff;
+    --gray: #aaa;
+    --white: rgba(255, 255, 255, 1);
+
+    --dark-primary: #40444b;
+    --dark-secondary: #292b2f;
+    --danger: #ff5b57;
+    --danger-secondary: #ad3e3c;
+    --green: #2da86e;
+    --green-secondary: #157347;
+
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: 	#bec8d1;
+}
+
+
+
+#title {
+    background-color: 	#373b3e;
+    color: var(--light);
+    height: 40px;
+    padding: 20px 30px;
+}
+
+main {
+    margin: 60px 160px;
+}
+
+#to-do-title {
+    font-weight: 400;
+    padding-bottom: 40px;
+}
+
+
+/*Input form*/
+.to-do-input-container {
+    padding: 0px 80px;
+}
+
+#to-do-form {
+    display: flex;
+    gap: 16px;
+}
+
+
+/*Buttons*/
+.to-do-button {
+    padding:  4px 4px;
+    border-radius: 8px;
+    border: 1px solid var(--gray);
+    transition: 0.2s ease-in-out;
+    color: var(--white);
+}
+
+
+.to-do-submit:hover, 
+.to-do-submit:active {
+    background-color: var(--secondary);
+}
+
+.to-do-input {
+    width: 80%;
+    color: var(--dark-primary);
+}
+
+.to-do-submit {
+    background-color: var(--primary);
+}
+
+.complete-all {
+    background-color: var(--green);
+}
+
+.complete-all:hover,
+.complete-all:active {
+    background-color: var(--green-secondary);
+}
+
+.delete-all {
+    background-color: var(--danger);
+}
+
+.delete-all:hover,
+.delete-all:active {
+    background-color: var(--danger-secondary);
+}
+
+
+/*List itself*/
+.to-do-list-container {
+    margin: 32px 0;
+}
+
+.to-do-list-container .to-do-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--light);
+    padding: 16px;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 8px;
+}
+
+.to-do-item label {
+    display: block;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.to-do-item .to-do-content {
+    flex: 1 1 0%;
+}
+
+.to-do-item .to-do-content input {
+    width: 800px;
+    margin-right: 20px;
+    color: var(--dark-primary);
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+}
+
+/*ToDo item buttons*/
+.to-do-item .actions {
+    display: flex;
+    align-items: center;
+}
+
+.to-do-item .actions button {
+    display: block;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    border: 2px solid var(--gray);
+}
+
+.to-do-item .actions .edit:hover {
+    background-color: var(--secondary);
+}
+
+.to-do-item .actions .delete:hover {
+    background-color: var(--danger-secondary);
+}
+
+.to-do-item .actions .edit {
+    margin-right: 0.5rem;
+    background-color: var(--primary);
+}
+
+.to-do-item .actions .delete {
+    background-color: var(--danger);
+}
+
+.to-do-item.done .to-do-content input {
+    text-decoration: line-through;
+    color: var(--gray);
+}
