@@ -1,7 +1,20 @@
 window.addEventListener('load', () => {
     todos = JSON.parse(localStorage.getItem('todos')) || [];
     const newTodoForm = document.getElementById('to-do-form');
-
+    const completeAllButton = document.querySelector('.to-do-button.complete-all');
+    const deleteAllButton = document.querySelector('.to-do-button.delete-all');
+    
+    completeAllButton.addEventListener('click', e => {
+        todos.forEach(todo => {
+            todo.done = true;
+        });
+        localStorage.setItem('todos', JSON.stringify(todos));
+    })
+    
+    deleteAllButton.addEventListener('click', e => {
+        todos = [];
+        localStorage.setItem('todos', JSON.stringify(todos));
+    })
 
     newTodoForm.addEventListener('submit', e => {
         e.preventDefault();
@@ -14,8 +27,9 @@ window.addEventListener('load', () => {
 
         if (todo.content.length > 0) {
             todos.push(todo);
-
             localStorage.setItem('todos', JSON.stringify(todos));
+        } else {
+            alert('Please provide text');
         }
 
 
@@ -107,17 +121,3 @@ function DisplayTodos() {
 }
 
  
-const completeAllButton = document.querySelector('.to-do-button.complete-all');
-const deleteAllButton = document.querySelector('.to-do-button.delete-all');
-
-completeAllButton.addEventListener('click', e => {
-    todos.forEach(todo => {
-        todo.done = true;
-    });
-    localStorage.setItem('todos', JSON.stringify(todos));
-})
-
-deleteAllButton.addEventListener('click', e => {
-    todos = [];
-    localStorage.setItem('todos', JSON.stringify(todos));
-})
