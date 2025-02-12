@@ -1,9 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { UserComponent } from './user/user.component';
 import { ChildComponent } from './child/child.component';
 import { CommentsComponent } from './comments/comments.component';
-import { ReactiveFormsModule, FormControl, FormGroup, Validator } from '@angular/forms';
+import { ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angular/forms';
+import { CarService } from './car.service';
+import { LowerCasePipe, DecimalPipe, DatePipe, CurrencyPipe } from '@angular/common';
+import { ReversePipe } from './reverse.pipe';
 
 @Component({
   selector: 'app-user-old',
@@ -21,7 +24,9 @@ export class OldUserComponent {
 @Component({
   selector: 'app-root', 
   imports: [OldUserComponent, RouterOutlet, UserComponent, 
-    ChildComponent, CommentsComponent, RouterLink, ReactiveFormsModule
+    ChildComponent, CommentsComponent, RouterLink, 
+    ReactiveFormsModule, LowerCasePipe, 
+    DecimalPipe, DatePipe, CurrencyPipe, ReversePipe
   ],
   standalone: true,
   templateUrl: './app.component.html',
@@ -36,9 +41,22 @@ export class AppComponent {
   message = '';
   items = new Array();
   profileForm = new FormGroup({
-    name: new FormControl(''),
-    email: new FormControl('')
+    name: new FormControl('', Validators.required),
+    email: new FormControl('', [Validators.required, Validators.email])
   });
+  carService = inject(CarService);
+  display: string = '';
+  displayConst = '';
+  upperCaseMessage = 'I AM POD';
+  num = 103.1234;
+  birthday = new Date(2006, 4, 2);
+  cost = 4560.34;
+  word = 'You are a champion';
+
+  constructor(private carServiceConst: CarService) {
+    this.display = this.carService.getCars().join('<==>');
+    this.displayConst = this.carServiceConst.getCars().join('\--/')
+  }
 
   onMouseOver() {
     this.message = 'Way to go 🚀';

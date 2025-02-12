@@ -1,17 +1,17 @@
 <section>
-  <h3>Interpolation - use double curly braces</h3>
+  <h2>Interpolation - use double curly braces</h2>
   Hello, {{city}}, 1 + 1 = {{1+1}}
 </section>
 
 
 <section>
-  <h3>Using nested components</h3>
+  <h2>Using nested components</h2>
   <app-user-old />
 </section>
 
 
 <section>
-  <h3>Conditionals</h3>
+  <h2>Conditionals</h2>
   @if (isServerRunning) {
     <span>Yes, the server is running</span>
   }
@@ -22,7 +22,7 @@
 
 
 <section>
-  <h3>Loops</h3>
+  <h2>Loops</h2>
   <ul>
   @for (user of users; track user.id) {
     <li>{{ user.name }}</li>
@@ -32,7 +32,7 @@
 
 
 <section>
-  <h3>Property Binding - use []</h3>
+  <h2>Property Binding - use []</h2>
   <div [contentEditable]="isEditable" class="editable-div">
     Some text
   </div>
@@ -40,7 +40,7 @@
 
 
 <section>
-  <h3>Event binding - use ()</h3>
+  <h2>Event binding - use ()</h2>
   <section (mouseover)="onMouseOver()" class="event-binding-div">
     Hover to reveal the result of binded function.
     <p>{{ message }}</p>
@@ -49,13 +49,13 @@
 
 
 <section>
-  <h3>Input property - uses user component</h3>
+  <h2>Input property - uses user component</h2>
   <app-user name="Simran" occupation="Frontend dev" />
 </section>
 
 
 <section>
-  <h3>Output property - uses child component</h3>
+  <h2>Output property - uses child component</h2>
   <app-child (addItemEvent)="addItem($event)" />
   <p>🐇 has reproduced {{ items.length }} times</p>
   <h4>Kids:</h4>
@@ -68,7 +68,7 @@
 
 
 <section>
-  <h3>Defer - uses comments component</h3>
+  <h2>Defer - uses comments component</h2>
   <div>
     <h4>How I feel about Angular</h4>
     <article>
@@ -92,7 +92,7 @@
 
 
 <section>
-  <h3>Routers</h3>
+  <h2>Routers</h2>
 
   <nav>
   <a routerLink="/home">Home</a>
@@ -106,7 +106,7 @@
   <form [formGroup]="profileForm" (ngSubmit)="handleSubmit()">
     <input type="text" formControlName="name" />
     <input type="email" formControlName="email" />
-    <button type="submit">Submit</button>
+    <button type="submit" [disabled]="!profileForm.valid">Submit</button>
   </form>
 
   <h4>Profile Form</h4>
@@ -114,5 +114,36 @@
   <p>Email: {{ profileForm.value.email }}</p>
 </section>
 
+
+<section>
+  <h2>DI - using Injectables</h2>
+  <p>{{ carService.getCars() }}</p>
+  <p>{{ display }}</p>
+  <p>{{ displayConst }}</p>
+</section>
+
+
+<section>
+  <h2>Pipes</h2>
+  <p>Original message: {{ upperCaseMessage }}</p>
+  <p>Piped message: {{ upperCaseMessage | lowercase }}</p>
+</section>
+
+
+<section>
+  <h2>Customize pipes</h2>
+  <ul>
+    <li>Number with "decimal" {{ num | number:"3.2-2"}}</li>
+    <li>Date with "date" {{ birthday | date:"medium" }}</li>
+    <li>Currency with "currency" {{ cost | currency }}</li>
+  </ul>
+</section>
+
+
+
+<section>
+  <h2>Own pipe</h2>
+  <p>Reverse Machine: {{ word | reverse }}</p>
+</section>
 
 <router-outlet />
