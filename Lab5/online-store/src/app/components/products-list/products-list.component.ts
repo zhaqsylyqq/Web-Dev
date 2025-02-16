@@ -1,13 +1,14 @@
 import { Component, signal } from '@angular/core';
 import productsList from '../../../../products.json';
 import { Product } from './products.models';
-import { ProductCardComponent } from '../product-card/product-card.component';
+import { ProductItemComponent } from '../product-item/product-item.component';
 import { Category } from '../category/category.enum';
+
 
 @Component({
   selector: 'app-products-list',
   standalone: true,
-  imports: [ProductCardComponent],
+  imports: [ProductItemComponent],
   templateUrl: './products-list.component.html',
   styleUrl: './products-list.component.css'
 })

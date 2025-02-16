@@ -56,6 +56,20 @@
         "category" : "Music Records"
     },
     {
+        "name" : "Пластинка Arctic Monkeys - AM",
+        "imageUrl" : "https://resources.cdn-kaspi.kz/img/m/p/h0e/h16/64395659345950.jpg?format=gallery-medium",
+        "description" : [
+            "Genre: Rock",
+            "Year: 2016 (Republish)",
+            "Label: XL Recordings"
+        ],
+        "id" : 5,
+        "rating" : 5.0,
+        "price" : 39990,
+        "link" : "https://kaspi.kz/shop/p/arctic-monkeys---am-106709569/?c=750000000",
+        "category" : "Music Records"
+    },
+    {
         "name" : "Цифровое пианино Yamaha P-45B",
         "imageUrl" : "https://resources.cdn-kaspi.kz/img/m/p/hb4/h2b/63773870653470.jpg?format=gallery-medium",
         "description" : [
@@ -66,7 +80,7 @@
             "Song Recording: No",
             "Pedals: Connectable"
         ],
-        "id" : 5,
+        "id" : 6,
         "rating" : 4.8,
         "price" : 207990,
         "link" : "https://kaspi.kz/shop/p/tsifrovoe-pianino-yamaha-p-45b-14300049/?c=750000000",
@@ -83,7 +97,7 @@
             "Song Recording: Yes",
             "Pedals: Connectable"
         ],
-        "id" : 6,
+        "id" : 7,
         "rating" : 4.8,
         "price" : 624590,
         "link" : "https://kaspi.kz/shop/p/tsifrovoe-pianino-yamaha-ydp-145wh-109189071/?c=750000000",
@@ -100,7 +114,41 @@
             "Song Recording: Yes",
             "Pedals: Connectable"
         ],
-        "id" : 7,
+        "id" : 8,
+        "rating" : 5,
+        "price" : 609090,
+        "link" : "https://kaspi.kz/shop/p/tsifrovoe-pianino-yamaha-ydp-145b-109518135/?c=750000000",
+        "category" : "Music Instruments"
+    },
+    {
+        "name" : "Электрогитара Fender Player Plus Telecaster 014-7332-376 Green",
+        "imageUrl" : "https://resources.cdn-kaspi.kz/img/m/p/h5a/hd9/64184794087454.jpg?format=gallery-medium",
+        "description" : [
+            "Scale length: 25.5 inches",
+            "Type: Electric guitar",
+            "Number of strings: 6",
+            "Neck joint: Bolt-on",
+            "Body shape: Telecaster",
+            "Body material: Alder"
+        ],
+        "id" : 9,
+        "rating" : 5,
+        "price" : 696400,
+        "link" : "https://kaspi.kz/shop/p/fender-player-plus-telecaster-014-7332-376-green-103144143/?c=750000000",
+        "category" : "Music Instruments"
+    },
+    {
+        "name" : "Цифровое пианино Yamaha YDP-145B",
+        "imageUrl" : "https://resources.cdn-kaspi.kz/img/m/p/h92/h5d/79242554769438.jpg?format=gallery-medium",
+        "description" : [
+            "Learning Mode: No",
+            "Type: Digital piano",
+            "Number of Keys: 88",
+            "Key Action: Weighted",
+            "Song Recording: Yes",
+            "Pedals: Connectable"
+        ],
+        "id" : 8,
         "rating" : 5,
         "price" : 609090,
         "link" : "https://kaspi.kz/shop/p/tsifrovoe-pianino-yamaha-ydp-145b-109518135/?c=750000000",
@@ -114,7 +162,7 @@
             "Subgenre: Shounen, Fantasy, Comedy, Mystery, Action, Horror, School",
             "In Color: No"
         ],
-        "id" : 8,
+        "id" : 11,
         "rating" : 5,
         "price" : 6217,
         "link" : "https://kaspi.kz/shop/p/akutami-g-magicheskaja-bitva-chast-1-dvulikii-sukuna-prokljatyi-plod-105137134/?c=750000000",
@@ -128,7 +176,7 @@
             "Subgenre: Action, Horror, Science Fiction, Seinen, Drama, Mystery",
             "In Color: No"
         ],
-        "id" : 9,
+        "id" : 12,
         "rating" : 5,
         "price" : 7350,
         "link" : "https://kaspi.kz/shop/p/isida-s-tokiiskii-gul-chast-1-26014610/?c=750000000",
@@ -142,7 +190,7 @@
             "Subgenre: Shounen, Comedy, Drama, Action, Thriller, Dark Fantasy",
             "In Color: No"
         ],
-        "id" : 10,
+        "id" : 13,
         "rating" : 5,
         "price" : 7850,
         "link" : "https://kaspi.kz/shop/p/fudzimoto-t-chelovek-benzopila-chast-1-pes-i-benzopila-benzopila-protiv-netopyrja-103331271/?c=750000000",

@@ -5,13 +5,13 @@ import { RatingPipe } from './rating.pipe';
 import { PrimaryButtonComponent } from '../primary-button/primary-button.component';
 
 @Component({
-  selector: 'app-product-card',
+  selector: 'app-product-item',
   standalone: true,
   imports: [CurrencyPipe, RatingPipe, PrimaryButtonComponent, NgOptimizedImage],
-  templateUrl: './product-card.component.html',
-  styleUrl: './product-card.component.css'
+  templateUrl: './product-item.component.html',
+  styleUrl: './product-item.component.css'
 })
-export class ProductCardComponent {
+export class ProductItemComponent {
   encodeProductURI(uri: string) { //wrapper method - sorry did not come up with a smarter way
     return encodeURIComponent(uri);
   }
