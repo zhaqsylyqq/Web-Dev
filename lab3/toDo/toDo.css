@@ -1,0 +1,90 @@
+#todo1 {
+    border: 1px solid black;
+    color: #777777;
+    font-size: 24px;
+    padding: 13px;
+    background-color: black;
+    width: auto;
+    box-sizing:border-box;
+    padding-left: 50px;
+}
+#todo2{
+    font-size: 35px;
+    margin-left:330px ;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.add{
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 7px;
+    margin-left: 20px;
+    color: aliceblue;
+    padding: 2px;
+    width: 70px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 25px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.add hover{
+    color: red;
+
+}
+.message {
+    border: 2px solid #555555;
+    border-radius: 7px;
+    width: 500px;
+    box-sizing: border-box;
+    padding: 8px 15px;
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.create_new_todo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo {
+    display: flex;
+    flex-direction: column-reverse;
+    list-style-type: none;
+    padding: 0;
+}
+.todo_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.todo{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    padding-left: 0px;
+}
+.todo li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    width: 800px;
+    border-radius: 12px;
+}
+.todo li input{
+    margin-right: 50px;
+}
+.todo li label{
+    font-size: 20px;
+}
+.todo li img{
+    width: 20px;
+    height: 20px;
+}
+.todo li input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #999;
+}
