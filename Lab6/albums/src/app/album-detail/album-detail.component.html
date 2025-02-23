@@ -1,0 +1,14 @@
+<div *ngIf="loaded" id='wrapper'>
+<button id='return' (click)="location.back()">Return back</button>
+<div id="details">
+    <h3>Album details #{{album.id}}</h3>
+    <h5>Title: {{ album.title }}</h5>
+    <fieldset>
+        <input type="text" [(ngModel)]="newTitle" placeholder="Enter a new album title">
+        <button id='upd' (click)="updateAlbumTitle()">Save</button>
+    </fieldset>
+    <p>Click to watch the <a routerLink="/albums/{{album.id}}/photos">photos</a> of the album!</p>
+</div>
+</div>
+
+<h2 *ngIf="!loaded">Album details are loading...</h2>

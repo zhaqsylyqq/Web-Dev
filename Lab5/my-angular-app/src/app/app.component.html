@@ -1,0 +1,18 @@
+<h2 class="catalog-title">Каталог товаров</h2>
+
+<div class="categories">
+  <button *ngFor="let category of categories" (click)="selectCategory(category)">
+    {{ category }}
+  </button>
+</div>
+
+<div *ngIf="selectedCategory && getProductsByCategory().length > 0">
+  <h3>Товары в категории "{{ selectedCategory }}"</h3>
+  <div class="products-container">
+    <app-product-item *ngFor="let product of getProductsByCategory()" [product]="product" (productRemoved)="removeProduct($event)"></app-product-item>
+  </div>
+</div>
+
+<p *ngIf="selectedCategory && getProductsByCategory().length === 0">
+  В этой категории пока нет товаров.
+</p>

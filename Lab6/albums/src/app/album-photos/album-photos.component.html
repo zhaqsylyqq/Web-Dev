@@ -1,0 +1,11 @@
+<div id="wrapper">
+  <button (click)="location.back()">Return back</button><br /><br />
+  <ul *ngFor="let photo of photos">
+    <li>
+      <div id="inner">
+        <h4>{{ photo.title }}</h4>
+        <img src="{{ photo.url }}" width="200px" />
+      </div>
+    </li>
+  </ul>
+</div>

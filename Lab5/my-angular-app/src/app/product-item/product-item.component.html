@@ -1,0 +1,14 @@
+<div class="product-card">
+  <img [src]="product.imageUrls[0]" alt="{{ product.name }}">
+  <h3>{{ product.name }}</h3>
+  <p>{{ product.description }}</p>
+  <p>⭐ {{ product.rating }}</p>
+
+  <button (click)="likeProduct()" [class.liked]="product.liked">❤️ {{ product.likes }}</button>
+  <button (click)="removeProduct()">🗑 Удалить</button>
+
+  <a [href]="product.link" target="_blank">Подробнее</a>
+
+  <button (click)="shareOnWhatsApp()">📱 Поделиться в WhatsApp</button>
+  <button (click)="shareOnTelegram()">📩 Поделиться в Telegram</button>
+</div>

@@ -1,0 +1,56 @@
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+input[type='text'] {
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 84.2%;
+}
+
+button {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #3ad135;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#del {
+  background-color: #f71515;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-size: 24px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  color: #6d50eb;
+  text-decoration: none;
+  margin-right: 10px;
+}

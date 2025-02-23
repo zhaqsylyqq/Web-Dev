@@ -1,0 +1,25 @@
+<h1>Albums list</h1>
+
+<div id="wrapper">
+  <fieldset>
+    <input
+      type="text"
+      placeholder="Enter album name"
+      [(ngModel)]="newAlbum.title"
+    />
+    <button (click)="addAlbum()">Add album</button>
+  </fieldset>
+
+  <ul *ngIf="loaded">
+    <li *ngFor="let album of albums">
+      <a routerLink="/albums/{{ album.id }}">
+        {{ album.id }}) {{ album.title }}
+      </a>
+      <button id="del" (click)="deleteAlbum(album)">Delete</button>
+      <!-- <input type="text" [(ngModel)]="album.title"> -->
+      <!-- <button (click)="updateAlbum(album)">Update</button> -->
+    </li>
+  </ul>
+
+  <h3 *ngIf="!loaded">Albums are loading...</h3>
+</div>
