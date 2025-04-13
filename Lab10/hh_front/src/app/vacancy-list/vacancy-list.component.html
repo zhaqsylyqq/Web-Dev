@@ -1,0 +1,22 @@
+<h2>Vacancies for Company #{{ companyId }}</h2>
+
+<div *ngFor="let vacancy of vacancies">
+    <h4>{{ vacancy.name }}</h4>
+    <p>{{ vacancy.description }} — {{ vacancy.salary }} KZT</p>
+    <button (click)="editVacancy(vacancy)">Edit</button>
+    <button (click)="deleteVacancy(vacancy.id)">Delete</button>
+
+  <div *ngIf="editingVacancy">
+    <input [(ngModel)]="editingVacancy.name" placeholder="Name">
+    <input [(ngModel)]="editingVacancy.description" placeholder="Description">
+    <input [(ngModel)]="editingVacancy.salary" type="number" placeholder="Salary">
+    <button (click)="updateVacancy()">Save</button>
+    <button (click)="cancelEdit()">Cancel</button>
+  </div>
+</div>
+
+<h3>Create new vacancy</h3>
+<input [(ngModel)]="newVacancy.name" placeholder="Name">
+<input [(ngModel)]="newVacancy.description" placeholder="Description">
+<input [(ngModel)]="newVacancy.salary" type="number" placeholder="Salary">
+<button (click)="createVacancy()">Create</button>

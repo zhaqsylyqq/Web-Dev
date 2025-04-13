@@ -1,0 +1,133 @@
+/* Companies Component Styles */
+h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+}
+
+li {
+  background: #f8f9fa;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button[type="submit"] {
+  background: #2ecc71;
+  color: white;
+}
+
+.edit-btn {
+  background: #3498db;
+  color: white;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+/* Forms */
+form {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 4px;
+  max-width: 600px;
+  margin-top: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Editing Section */
+div[editingsection] {
+  background: #fff3e0;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-left: 4px solid #3498db;
+}
+
+/* Vacancies Component Styles */
+.vacancy-card {
+  background: #f8f9fa;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.vacancy-card h4 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+}
+
+.vacancy-card p {
+  margin: 0;
+  color: #7f8c8d;
+}
+
+/* Empty State */
+p[ngif] {
+  color: #95a5a6;
+  font-style: italic;
+}
+
+/* Consistent Button Styles */
+.cancel-btn {
+  background: #95a5a6;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  button {
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+}
